@@ -5,11 +5,11 @@ const moviesSlice = createSlice({
     name: "Movies Slice",
     initialState: {
         movies: data,
+        moviesLocal: data,
     },
     reducers: {
         addMovie(state, action) {
-            //add movie to movies
-            state.movies.push(action.payload);
+            state.moviesLocal.push(action.payload);
         },
         deleteMovie() {},
         updateMovie(state, action) {

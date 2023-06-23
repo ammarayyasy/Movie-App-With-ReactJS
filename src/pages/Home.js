@@ -1,12 +1,17 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import Hero from "../components/Hero/Hero";
 import Movies from "../components/Movies/Movies";
-import data from "../utils/constants/data";
 import { updateMovie } from "../features/movieSlice";
+import { useEffect } from "react";
 
 function Home() {
-    // const dispatch = useDispatch();
-    // dispatch(updateMovie(data));
+    const dispatch = useDispatch();
+    const moviesLocal = useSelector((store) => store.movies.moviesLocal); 
+    
+    useEffect(() => {
+        dispatch(updateMovie(moviesLocal));
+    }, []);
+
     return(
         <div>
             <Hero/>

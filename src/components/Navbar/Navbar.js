@@ -12,7 +12,7 @@ function Navbar() {
         <NavbarStyled>
             <nav>
                 <div>
-                    <h1>Cinemaindo App</h1>
+                    <Link to="/"><h1>Cinemaindo</h1></Link>
                 </div>
                 
                 <div>
