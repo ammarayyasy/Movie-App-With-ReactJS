@@ -5,7 +5,7 @@ function Footer() {
         <FooterStyled>
             <footer>
                 <h1>Cinemaindo App</h1>
-                <p>Created by Ammarayyasy</p>
+                <p>Created by Loverman</p>
             </footer>
         </FooterStyled>
     )
